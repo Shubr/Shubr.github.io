@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit/Kanit-Black.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  scrollbar-width: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to top right,
+    #99003b,
+    #ff0062,
+    #ff0062,
+    #ff71a8,
+    #fff
+  );
+  background-repeat: no;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  transition: 1s;
+  padding-left: 20px;
+  background-color: transparent;
+  font-family: "Kanit";
+}
+
+li {
+  width: 40%;
+  height: 100%;
+  list-style: none;
+  color: #1c1b1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  transition: 0.4s;
+  gap: 30px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+nav li a:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  font-size: 60px;
+  transition: 0.6s;
+  padding-left: 50px;
+}
+
+/* ME PAGE */
+
+.about-me-container {
+  width: 60%;
+  height: 600px;
+  background-color: white;
+  box-shadow: 50px 5px 100px 2px white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  background-image: url("./gif/Screen\ Recording\ 2024-09-01\ at\ 11.05.47\ PM-2.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.photo {
+  width: 50%;
+  height: 100%;
+}
+
+.about-me {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.social {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+}
+
+.contact-container {
+  width: 50%;
+  height: 600px;
+  background-color: white;
+  box-shadow: 50px 5px 100px 2px white;
+  border-radius: 4px;
+}
+
+.projects-container {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+
+.experience-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.award-container {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.IT-experience-container {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.IT-experience-container .slider img {
+  width: 400px;
+  height: 60%;
+  background-color: #1c1b1b;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.slider {
+  height: 100%;
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 50px 0px 50px;
+}
+
+.slider .mobile-app,
+.slider .desktop-app {
+  flex-shrink: 0;
+}
+
+.slider {
+  user-select: none;
+}
+.slider {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-app {
+  width: 280px;
+  height: 80%;
+  border-radius: 10px;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.mobile-app:hover {
+  width: 300px;
+  height: 90%;
+  transition: 0.4s;
+}
+
+.desktop-app {
+  width: 650px;
+  height: 80%;
+  border-radius: 10px;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.desktop-app:hover {
+  width: 750px;
+  height: 90%;
+  transition: 0.4s;
+}
+
+.award-container .slider img {
+  width: 400px;
+  height: 60%;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.certificate {
+  box-shadow: 20px 5px 100px 10px rgb(161, 255, 133);
+}
+.valedictorian {
+  box-shadow: 20px 5px 100px 10px rgb(0, 255, 213);
+}
+.bachelors {
+  box-shadow: 20px 5px 100px 10px rgb(210, 133, 255);
+}
+
+.certificate:hover {
+  width: 450px;
+  height: 70%;
+}
+.valedictorian:hover {
+  width: 450px;
+  height: 70%;
+}
+.bachelors:hover {
+  width: 450px;
+  height: 70%;
+}
+
+.cs {
+  width: 450px;
+  height: 70%;
+}
+.mobileDev {
+  width: 450px;
+  height: 70%;
+}
+.webDev {
+  width: 450px;
+  height: 70%;
+}
